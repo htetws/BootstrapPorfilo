@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Porfilo Website</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      .image img {
+        width: 100%;
+      }
+      .navbar {
+        z-index: 10;
+      }
+      .imagefav {
+        width: 7%;
+        object-fit: cover;
+        margin-bottom: 0.3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navbar-->
+
+    <nav
+      class="navbar navbar-expand-lg bg-white shadow-sm position-sticky top-0"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand align-items-center">
+          <img src="images/favicon.png" alt="" class="imagefav" />
+          igris</a
+        >
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-target="#NavbarID"
+          data-bs-toggle="collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="NavbarID">
+          <ul class="navbar-nav align-items-center ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skill" class="nav-link">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#freelance" class="nav-link">Freelance</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <!--Hero-->
+
+      <div id="home" class="row p-5 vh-75 align-items-center mt-5">
+        <div class="image col-md-6 text-center">
+          <img src="images/undraw_laravel_and_vue_-59-tp.svg" alt="" />
+        </div>
+        <div class="col-md-6 order-md-first fs-3 mt-5 mt-md-0">
+          <p class="text-muted fs-5">Hello I'm</p>
+          <h1 class="display-4 text-primary active">Web Developer</h1>
+          <h4 class="text-muted">Yamori Kou</h4>
+          <p class="text-muted fs-6 pe-md-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            dicta quisquam, sapiente similique perferendis.
+          </p>
+          <button class="btn btn-lg btn-outline-primary mt-3">
+            Download CV
+          </button>
+        </div>
+      </div>
+
+      <!--About-->
+
+      <div class="about bg-light my-5" id="about">
+        <div class="row text-center">
+          <h1 class="fw-bold">About Me</h1>
+        </div>
+        <div class="row mt-5">
+          <!--Left-->
+          <div class="col-md-6 px-2 px-md-0">
+            <h1 class="fs-1 my-3">Freelancer</h1>
+            <p class="text-muted">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam,
+              inventore quam suscipit reprehenderit molestiae qui! Voluptatum
+              iure non suscipit illo aut voluptatem iusto commodi, cupiditate,
+              libero voluptates animi in est.
+            </p>
+            <div class="row text-center mt-4 text-capitalize">
+              <div class="col-sm-4 my-2 py-3 my-sm-0 py-sm-0">
+                <p class="display-6 fw-bold">100+</p>
+                <h5>project complete</h5>
+              </div>
+              <div class="col-sm-4 my-2 py-3 my-sm-0 py-sm-0">
+                <p class="display-6 fw-bold">90+</p>
+                <h5>happy clients</h5>
+              </div>
+              <div class="col-sm-4 my-2 py-3 my-sm-0 py-sm-0">
+                <p class="display-6 fw-bold">95+</p>
+                <h5>positive reviews</h5>
+              </div>
+            </div>
+            <!--Social Link-->
+            <div
+              class="col-lg-12 mt-4 align-items-center lh-lg d-flex align-items-center ps-3 justify-content-evenly justify-content-md-start mb-5"
+            >
+              <button type="button" class="btn btn-primary active">
+                Skill Info
+              </button>
+              <a href="#" target="_blank" class="mx-1 mx-md-3 fs-4"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" target="_blank" class="mx-1 mx-md-3 fs-4"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" target="_blank" class="mx-1 mx-md-3 fs-4"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="#" target="_blank" class="mx-1 mx-md-3 fs-4"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <!--Right-->
+          <div class="col-md-6 px-md-5 px-5 mt-4 mt-md-0">
+            <div class="skill my-4">
+              <h5 class="fw-semibold">HTML</h5>
+              <div class="progress" style="height: 0.5rem">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 75%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill my-4">
+              <h5 class="fw-semibold">CSS</h5>
+              <div class="progress" style="height: 0.5rem">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 65%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill my-4">
+              <h5 class="fw-semibold">Javascript</h5>
+              <div class="progress" style="height: 0.5rem">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 55%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill my-4">
+              <h5 class="fw-semibold">PHP</h5>
+              <div class="progress" style="height: 0.5rem">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 35%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--What can i do-->
+
+      <div id="skill" class="row text-center my-5">
+        <div class="col-12 my-5"><h1>What can i do</h1></div>
+      </div>
+      <div class="row text-center mb-5 p-4">
+        <div class="col-md-6 col-lg-4">
+          <i class="fa-solid fa-code fa-2x text-primary mb-4"></i>
+          <h4>Web Development</h4>
+          <p class="text-muted mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            esse hic sequi officiis illum obcaecati sed, amet similique officia
+            labore asperiores ut at veritatis quam ratione. Aliquid maiores quam
+            veniam?
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-4 mt-5 mt-md-0">
+          <i class="fa-solid fa-lightbulb fa-2x text-primary mb-4"></i>
+          <h4>Creative idea</h4>
+          <p class="text-muted mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            esse hic sequi officiis illum obcaecati sed, amet similique officia
+            labore asperiores ut at veritatis quam ratione. Aliquid maiores quam
+            veniam?
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-4 mt-5 mt-md-0">
+          <i class="fa-solid fa-image fa-2x text-primary mb-4"></i>
+          <h4>Photoshop</h4>
+          <p class="text-muted mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            esse hic sequi officiis illum obcaecati sed, amet similique officia
+            labore asperiores ut at veritatis quam ratione. Aliquid maiores quam
+            veniam?
+          </p>
+        </div>
+      </div>
+
+      <!--Projects-->
+
+      <section id="Projects" class="mt-5 pt-md-5">
+        <div class="row">
+          <div class="col-12 text-center"><h1>Latest Projects</h1></div>
+        </div>
+        <div class="row g-4 p-4">
+          <div class="col-md-6 col-lg-4 rounded-3 p-4">
+            <div class="items">
+              <img
+                style="height: 250px; object-fit: cover"
+                src="https://cdn.dribbble.com/users/1913929/screenshots/15696664/dashboard_4x.jpg"
+                class="w-100 shadow-sm img-thumbnail"
+                class="w-100 shadow-sm"
+              />
+              <h3 class="my-3">Dashboard</h3>
+              <a
+                href="#demo"
+                class="text-decoration-none text-primary active fs-5"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 rounded-3 p-4">
+            <div class="items">
+              <img
+                style="height: 250px; object-fit: cover"
+                src="https://www.brunomag.com/brunomag_content/uploads/2020/12/3.png"
+                class="w-100 shadow-sm img-thumbnail"
+              />
+              <h3 class="my-3">Team Section</h3>
+              <a
+                href="#demo"
+                class="text-decoration-none text-primary active fs-5"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 rounded-3 p-4">
+            <div class="items">
+              <img
+                style="height: 250px; object-fit: cover"
+                src="https://www.marketeroslatam.com/wp-content/uploads/2022/02/dashboard.jpg"
+                class="w-100 shadow-sm img-thumbnail"
+                class="w-100 shadow-sm"
+              />
+              <h3 class="my-3">Code Section</h3>
+              <a
+                href="#demo"
+                class="text-decoration-none text-primary active fs-5"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 rounded-3 p-4">
+            <div class="items">
+              <img
+                style="height: 250px; object-fit: cover"
+                src="https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/987137/retina_1708x683_cover-0823-DashboardDesign-Dan-Newsletter-4b673291c44139549875f88c8c1c9a60.png"
+                class="w-100 shadow-sm img-thumbnail"
+                class="w-100 shadow-sm"
+              />
+              <h3 class="my-3">Weather Api</h3>
+              <a
+                href="#demo"
+                class="text-decoration-none text-primary active fs-5"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 rounded-3 p-4">
+            <div class="items">
+              <img
+                style="height: 250px; object-fit: cover"
+                src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/a7d8a885516221.5d7e861fd0c57.jpg"
+                class="w-100 shadow-sm img-thumbnail"
+              />
+              <h3 class="my-3">Ecommerance</h3>
+              <a
+                href="#demo"
+                class="text-decoration-none text-primary active fs-5"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 rounded-3 p-4">
+            <div class="items">
+              <img
+                style="height: 250px; object-fit: cover"
+                src="https://www.questionpro.com/blog/wp-content/uploads/2020/06/1376-768x512.jpg"
+                class="w-100 shadow-sm img-thumbnail"
+                class="w-100 shadow-sm"
+              />
+              <h3 class="my-3">Creative Code</h3>
+              <a
+                href="#demo"
+                class="text-decoration-none text-primary active fs-5"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Freelance-->
+      <section
+        id="freelance"
+        style="background-color: rgba(48, 111, 150, 0.171)"
+      >
+        <div class="row justify-content-center my-5 ms-md-5">
+          <div class="col-lg-7 my-4 p-5 p-md-0">
+            <p class="text-dark fs-5">Do you have any project ?</p>
+            <h1 class="display-6 fw-semibold my-4">
+              I am available for freelance projects.
+            </h1>
+            <button class="btn btn-outline-primary btn-lg">Contact Me</button>
+          </div>
+        </div>
+      </section>
+
+      <!--Member Section-->
+      <section
+        id="teamMember"
+        class="container-lg shadow-sm"
+        style="margin: 7rem 0"
+      >
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center my-md-5 my-5">
+            <h1>Team Member</h1>
+          </div>
+        </div>
+
+        <!--carousel-->
+
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide carousel-dark"
+          data-bs-ride="carousel"
+          style="margin: 3rem auto"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="m-auto text-center text-md-start">
+                <div
+                  class="d-inline-block d-md-flex justify-content-md-center align-items-center"
+                >
+                  <img
+                    style="height: 220px; width: 220px; object-fit: cover"
+                    src="https://pixlr.com/studio/template/6264364c-b8cc-4f4f-92d8-28c69a2b756w/thumbnail.webp"
+                    class="d-block rounded-circle img-thumbnail"
+                    alt="..."
+                  />
+                  <div class="text-item mt-4 mt-md-0 ms-md-5">
+                    <h3 class="display-6 fw-bold">Yamori Kou</h3>
+                    <p>Senior Web Developer</p>
+                  </div>
+                </div>
+                <p
+                  class="w-75 mx-auto text-muted"
+                  style="margin: 3rem 0 5rem 0"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Autem, sed quis maiores doloremque nemo totam dolores nihil
+                  numquam magni ex perspiciatis similique asperiores, iste nulla
+                  tempore sequi natus dolore corrupti?
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="m-auto text-center text-md-start">
+                <div
+                  class="d-inline-block d-md-flex justify-content-md-center align-items-center"
+                >
+                  <img
+                    style="height: 220px; width: 220px; object-fit: cover"
+                    src="https://dl.memuplay.com/new_market/img/com.vicman.newprofilepic.icon.2022-06-07-21-33-07.png"
+                    class="d-block rounded-circle img-thumbnail"
+                    alt="..."
+                  />
+                  <div class="text-item mt-4 mt-md-0 ms-md-5">
+                    <h3 class="display-6 fw-bold">Ichino Senpai</h3>
+                    <p>Senior React Developer</p>
+                  </div>
+                </div>
+                <p
+                  class="w-75 mx-auto text-muted"
+                  style="margin: 3rem 0 5rem 0"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Autem, sed quis maiores doloremque nemo totam dolores nihil
+                  numquam magni ex perspiciatis similique asperiores, iste nulla
+                  tempore sequi natus dolore corrupti?
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="m-auto text-center text-md-start">
+                <div
+                  class="d-inline-block d-md-flex justify-content-md-center align-items-center"
+                >
+                  <img
+                    style="height: 220px; width: 220px; object-fit: cover"
+                    src="https://www.thesun.co.uk/wp-content/uploads/2022/05/309E522E-D141-11EC-BE62-1280C3EF198F.jpeg"
+                    class="d-block rounded-circle img-thumbnail"
+                    alt="..."
+                  />
+                  <div class="text-item mt-4 mt-md-0 ms-md-5">
+                    <h3 class="display-6 fw-bold">Mei San</h3>
+                    <p>Senior PHP Developer</p>
+                  </div>
+                </div>
+                <p
+                  class="w-75 mx-auto text-muted"
+                  style="margin: 3rem 0 5rem 0"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Autem, sed quis maiores doloremque nemo totam dolores nihil
+                  numquam magni ex perspiciatis similique asperiores, iste nulla
+                  tempore sequi natus dolore corrupti?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Contact Section-->
+
+      <section id="contact" class="contact my-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center my-md-5 my-3">
+            <h1>Contact Me</h1>
+          </div>
+        </div>
+        <div class="row my-5">
+          <!--Left side-->
+          <div class="col-md-5">
+            <div class="d-flex align-items-center justify-content-center lh-1">
+              <div class="icon mb-3">
+                <i class="fa-solid fa-phone me-4 fs-1"></i>
+              </div>
+              <div class="item">
+                <h5>Phone</h5>
+                <p class="text-muted">09-123456789</p>
+              </div>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-center lh-1 mt-4"
+            >
+              <div class="icon mb-3">
+                <i class="fa-solid fa-envelope me-4 fs-1"></i>
+              </div>
+              <div class="item">
+                <h5>Email</h5>
+                <p class="text-muted">x@gmail.com</p>
+              </div>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-center lh-1 mt-4"
+            >
+              <div class="icon mb-3">
+                <i class="fa-solid fa-address-book me-4 fs-1"></i>
+              </div>
+              <div class="item">
+                <h5>Address</h5>
+                <p class="text-muted">Yangon | Mya</p>
+              </div>
+            </div>
+          </div>
+          <!-- Right side -->
+          <div class="col-md-7 mt-5 mt-md-0">
+            <div class="form">
+              <div class="row">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    id="username"
+                    class="form-control form-control-lg"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control form-control-lg"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <input
+                type="text"
+                placeholder="Subject"
+                class="form-control my-4 form-control-lg"
+              />
+            </div>
+            <textarea
+              class="form-control"
+              placeholder="Your Message"
+              rows="5"
+            ></textarea>
+            <button class="btn btn-primary active mt-4 btn-lg">
+              Send Message
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--Footer-->
+    <footer
+      class="container-fluid bg-primary active text-white"
+      style="margin-top: 5rem"
+    >
+      <p class="fs-6 py-3 text-center lh-lg mb-0">
+        Bootstrap porfilo project | 2022 , igris.
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
